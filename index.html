@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Sharing</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 1200px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .subtitle {
+            color: lightgray;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            height: 270px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            border-radius: 20px;
+            background-color: orange;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-align: center;
+            width: 80%;
+        }
+        .button:hover {
+            background-color: darkorange;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">
+            <img src="./tewq.jpg" alt="Logo" class="logo"> Resource Sharing
+        </h1>
+        
+        <p class="subtitle">Lift someone up, and you'll find yourself rising too.</p>
+        <div class="content">
+            <!-- Lost and Found Card -->
+            <div class="card-container">
+                <div class="card">
+                    <h2>Lost and Found</h2>
+                    <ul>
+                        <li>Identify lost items based on image similarity</li>
+                        <li>Compare uploaded images with a stored database</li>
+                        <li>Find the best match using deep learning and feature extraction</li>
+                        <li>Provide contact details of the owner</li>
+                    </ul>
+                </div>
+                <a href="https://lost-n-found-new.onrender.com/" class="button">Search Item</a>
+            </div>
+
+            <!-- Skills Sharing Card -->
+            <div class="card-container">
+                <div class="card">
+                    <h2>Skills Sharing</h2>
+                    <ul>
+                        <li>Extracts skills from your LinkedIn and resume.</li>
+                        <li>Generates project ideas tailored to your expertise.</li>
+                        <li>Connects you with experts who can help when you're stuck.</li>
+                        <li>Provides learning resources to enhance your skills</li>
+                    </ul>
+                </div>
+                <a href="https://second-page-latest.vercel.app/" class="button">Extract Skills</a>
+            </div>
+
+            <!-- Content Generation Card -->
+            <div class="card-container">
+                <div class="card">
+                    <h2>Content Generation</h2>
+                    <ul>
+                        <li>Analyzes user input to identify required skills and generate content for it.</li>
+                        <li>Generates structured documentation from extracted data.</li>
+                        <li>Provides a downloadable README file for reference.</li>
+                        <li>Offers a user-friendly interface</li>
+                    
+                    </ul>
+                </div>
+                <a href="https://project-documentation.onrender.com/" class="button">Generate Content</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
